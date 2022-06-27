@@ -1,0 +1,109 @@
+body{
+    font-family: 'Rubik', sans-serif;
+}
+
+
+.navbar-nav{
+  margin-left: auto;
+}
+.header-serach {
+  width: 60px;
+  margin-left: 13px;
+  font-size: 23px;
+  border-right: 2px solid #ddd;
+  margin-right: 12px;
+}
+.header-call{
+  width: 200px;
+}
+.header-call-icon {
+  margin-right: 13px;
+  font-size: 28px;
+  color: #e73c3e;
+  margin-left: 0px;
+}
+.header-menu{
+  list-style: none;
+}
+.header-menu li{}
+.header-menu li a {
+  color: #111;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0px 15px;
+  font-size: 16px;
+  transition: .3s;
+}
+.header-menu li:hover> a{
+  color: #dc3545;
+}
+.header-call-info a {
+  color: #111;
+  font-weight: 500;
+  text-decoration: none;
+} 
+
+.header-call-info span {
+  color: #696969;
+  font-size: 18px;
+}
+.btn-primary {
+  background: #dc3545;
+  border-color:#dc3545;
+  padding: 11px 39px;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+} 
+.btn-primary::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #111;
+  z-index: -1;
+  transition: .4s;
+}
+.btn-primary:hover::after{
+  width: 100%;
+}
+.fa-solid.fa-angle-down {
+  font-size: 10px;
+}
+/*Dropdwon */ 
+.active{
+  position: relative;
+}
+.active ul {
+  position: absolute;
+  left: 0;
+  top: 160%;
+  width: 250px;
+  list-style: none;
+  background-color: white;
+  box-shadow: 4px 5px 30px 0 rgba(196, 178, 178, 0.8);
+  padding: 10px 25px; 
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease-in-out;
+
+} 
+.active:hover ul{
+  opacity: 1;
+  visibility: visible;
+  top: 120%; 
+}
+.active ul li:hover a{
+  font-size: 16.8px;
+  transition: .5s;
+  font-weight: 500;
+}
+.active ul li{
+  flex-direction: column;
+}
+.active ul li a {
+  display: block;
+  padding: 10px 0;
+}
